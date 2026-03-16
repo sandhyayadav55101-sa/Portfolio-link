@@ -1,0 +1,880 @@
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Inter", sans-serif;
+}
+
+/* ===== COLOR THEME ===== */
+
+:root{
+--bg:#F3F4F6;
+--primary:#2F6F5E;
+--primary-dark:#25584A;
+--card:#FFFFFF;
+--text:#111111;
+--text-light:#555555;
+--border:#e5e7eb;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+margin:0;
+}
+.hero{
+padding-top:120px;
+}
+
+/* ===== NAVBAR ===== */
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:#2F6F5E;   /* dark green */
+border-bottom:none;   /* remove white line */
+
+z-index:1000;
+}
+
+.logo{
+font-weight:600;
+font-size:18px;
+color:white;
+}
+
+.navbar a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.navbar a:hover{
+color:#f4c542;
+}
+body{
+margin:0;
+}
+
+.navbar a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.navbar a:hover{
+color:#f4c542;
+}
+
+/* ===== HERO SECTION ===== */
+
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url("data-bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn{
+border:1px solid var(--primary);
+padding:10px 22px;
+color:var(--primary);
+text-decoration:none;
+margin-right:12px;
+border-radius:25px;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--primary);
+color:white;
+}
+
+/* ===== PROFILE IMAGE ===== */
+
+.hero-right img{
+width:220px;
+border-radius:6px;
+}
+
+/* ===== FIX HERO IMAGE POSITION ===== */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;   /* always keep image on right */
+}
+
+/* Prevent image from moving */
+
+.hero-left{
+flex:1;
+}
+
+.hero-right{
+flex:0 0 auto;
+}
+
+.hero-right img{
+width:220px;
+border-radius:6px;
+}
+
+/* ===== SECTIONS ===== */
+
+.section{
+padding:80px;
+}
+
+.section h3{
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+color:var(--primary);
+}
+
+/* ===== GRID ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* ===== CARDS ===== */
+
+.card{
+background:var(--card);
+border:1px solid var(--border);
+padding:24px;
+transition:.3s;
+}
+
+.card:hover{
+border-color:var(--primary);
+transform:translateY(-6px);
+}
+
+/* ===== SKILLS ===== */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:30px;
+}
+
+.skill-box{
+background:var(--card);
+border:1px solid var(--border);
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+
+.skill-box:hover{
+border-color:var(--primary);
+transform:translateY(-6px);
+}
+
+.custom-icon{
+width:60px;
+height:60px;
+margin-bottom:12px;
+}
+
+.skill-box p{
+color:var(--text-light);
+}
+
+/* ===== SKILLS SECTION BACKGROUND ===== */
+
+#skills{
+background:#37735F;
+}
+
+/* keep skill boxes visible */
+
+#skills .skill-box{
+background:white;
+}
+
+/* ===== QUOTE SECTION ===== */
+
+.quote-section{
+padding:80px;
+background:var(--primary);
+}
+
+.quote-box{
+max-width:900px;
+margin:auto;
+color:white;
+font-size:22px;
+line-height:1.8;
+}
+
+.quote-box span{
+display:block;
+margin-top:12px;
+opacity:.8;
+}
+
+/* ===== ABOUT ===== */
+
+.about{
+display:flex;
+align-items:center;
+gap:60px;
+}
+
+.about img{
+width:420px;
+border-radius:8px;
+}
+
+.about-text p{
+color:var(--text-light);
+margin-bottom:15px;
+}
+
+/* ===== BLOG ===== */
+
+#projects .grid{
+display:grid;
+grid-template-columns:repeat(2,1fr); /* 2 columns */
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+.blog-card{
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.blog-card img{
+width:100%;
+}
+
+.blog-card h4{
+padding:15px;
+}
+
+/* ===== CONTACT ===== */
+
+.contact-btn{
+border:1px solid var(--primary);
+padding:10px 25px;
+border-radius:25px;
+text-decoration:none;
+color:var(--primary);
+}
+
+.contact-btn:hover{
+background:var(--primary);
+color:white;
+}
+
+/* ===== IMAGE POPUP ===== */
+
+#img-popup{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+}
+
+#popup-img{
+max-width:90%;
+max-height:90%;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:row;   /* keep image on right */
+flex-wrap:wrap;       /* allow wrapping if needed */
+padding:60px 30px;
+}
+
+.hero-right img{
+width:220px;          /* keep same size */
+}
+
+
+.section{
+padding:60px 30px;
+}
+
+.navbar{
+padding:20px 30px;
+}
+
+}
+.hero-left h1{
+  color:white;
+}
+
+.hero-left h2{
+  color:#f4c542;
+}
+
+.hero-left p{
+  color:#e4e4e4;
+}
+.btn{
+  border:2px solid white;
+  color:white;
+}
+
+.btn:hover{
+  background:white;
+  color:black;
+}
+.hero-left p{
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.btn{
+  display:inline-block;
+  margin-right:15px;
+  margin-top:10px;
+}
+/* ===== PROJECT SECTION BACKGROUND FIX ===== */
+
+#projects{
+padding:80px;
+
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* keep project cards visible */
+
+#projects .card{
+background:white;
+color:#111;
+border:1px solid var(--border);
+}
+
+#projects .card:hover{
+border-color:var(--primary);
+transform:translateY(-6px);
+}
+/* ===== EXPERIENCE SECTION BACKGROUND ===== */
+#experience{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+
+/* ===== EDUCATION SECTION BACKGROUND ===== */
+#education{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+
+/* ===== CONTACT SECTION BACKGROUND ===== */
+#contact{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+#experience .card,
+#education .card,
+#contact .card{
+background:white;
+color:#111;
+}
+/* ===== ABOUT SECTION BACKGROUND ===== */
+#about{
+background:#37735F;
+color:white;
+}
+
+/* keep the box readable */
+#about .card{
+background:white;
+color:#111;
+}
+
+
+/* ===== CERTIFICATIONS SECTION BACKGROUND ===== */
+#certifications{
+background:#37735F;
+color:white;
+}
+
+/* keep certification cards white */
+#certifications .card{
+background:white;
+color:#111;
+}
+/* Headings in black */
+
+#skills h3,
+#about h3,
+#certifications h3{
+color:#000000;
+}
+/* Headings in dark green */
+
+#projects h3,
+#experience h3,
+#education h3,
+#contact h3{
+color:#2F6F5E;
+}
+.section{
+padding:80px 8%;
+}
+.hero{
+flex-wrap:wrap;
+gap:40px;
+}
+.hero-right img{
+width:220px;
+max-width:100%;
+height:auto;
+}
+#projects .grid{
+display:grid;
+grid-template-columns:repeat(2,1fr); /* 2 columns */
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+.skills-grid{
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+}
+
+.project-card{
+background:#ffffff;
+padding:30px;
+border-radius:25px;   /* rounded corners */
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+}
+.project-card p{
+margin-bottom:10px;
+line-height:1.5;
+}
+#img-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:2000;
+}
+
+#popup-img{
+max-width:95%;
+max-height:95%;
+border-radius:8px;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+/* ===== Rounded corners for all white boxes ===== */
+
+.card,
+.project-card{
+border-radius:25px;
+}
+/* ===== Make ALL boxes rounded ===== */
+
+.card,
+.project-card,
+.skill-box{
+border-radius:25px;
+}
+.section h3{
+text-transform: capitalize;
+}
+
+/* Professional profile image */
+
+.profile-card{
+padding:8px;
+border-radius:16px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+display:inline-block;
+}
+
+.profile-card img{
+width:240px;
+border-radius:12px;
+display:block;
+object-fit:cover;
+
+/* improves lighting */
+filter:brightness(1.05) contrast(1.05) saturate(1.05);
+}
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+
+@media (max-width:1024px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.hero-right img{
+width:200px;
+}
+
+.section{
+padding:60px 5%;
+}
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.navbar a{
+margin-left:15px;
+font-size:13px;
+}
+
+.hero{
+flex-direction:column;
+padding:120px 20px 60px;
+text-align:center;
+}
+
+.hero-left h1{
+font-size:32px;
+}
+
+.hero-left h2{
+font-size:22px;
+}
+
+.hero-left p{
+font-size:14px;
+}
+
+.hero-right img{
+width:180px;
+margin-top:20px;
+}
+
+.section{
+padding:60px 20px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.project-card{
+width:100%;
+}
+
+}
+
+/* Small phones */
+
+@media (max-width:480px){
+
+.hero-left h1{
+font-size:26px;
+}
+
+.hero-left h2{
+font-size:18px;
+}
+
+.hero-left p{
+font-size:13px;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+}
+/* ===== MOBILE FIX ===== */
+
+@media (max-width:768px){
+
+/* Fix Navbar */
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+padding:15px 20px;
+}
+
+.navbar a{
+display:inline-block;
+margin:5px 10px 0 0;
+font-size:13px;
+}
+
+/* Fix Projects Layout */
+.grid{
+grid-template-columns:1fr;
+}
+
+/* Make cards full width */
+.project-card,
+.card{
+width:100%;
+}
+
+/* Fix section spacing */
+.section{
+padding:60px 20px;
+}
+
+}
+
+
+/* ===== PROJECT MOBILE FIX ===== */
+
+@media (max-width:768px){
+
+#projects .grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+#projects .card,
+#projects .project-card{
+width:100%;
+}
+
+}
+
+/* ===== FIX MOBILE WHITE SPACE ===== */
+
+/* prevent horizontal scroll */
+html, body{
+overflow-x:hidden;
+width:100%;
+}
+
+/* make all sections stay inside screen */
+.section{
+max-width:100%;
+}
+
+/* fix grids on mobile */
+@media (max-width:768px){
+
+.grid{
+grid-template-columns:1fr;
+width:100%;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+width:100%;
+}
+
+.card,
+.project-card,
+.skill-box{
+width:100%;
+max-width:100%;
+}
+
+.hero{
+padding-left:20px;
+padding-right:20px;
+}
+
+}
+/* Change section order without touching background */
+
+body{
+display:flex;
+flex-direction:column;
+}
+
+#about{order:2;}
+#projects{order:3;}
+#skills{order:4;}
+#experience{order:5;}
+#certifications{order:6;}
+#education{order:7;}
+#contact{order:8;}
+
+
+
+
+/* ===== SECTION COLOR THEME ===== */
+
+/* Quote → Green */
+.quote-section{
+background:#2F6F5E;
+color:white;
+}
+
+/* About → Dark background */
+#about{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+
+/* Projects → Green */
+#projects{
+background:#2F6F5E;
+color:white;
+}
+
+/* Skills → Dark background */
+#skills{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+
+/* Experience → Green */
+#experience{
+background:#2F6F5E;
+color:white;
+}
+
+/* Certifications → Dark background */
+#certifications{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+
+/* Education → Green */
+#education{
+background:#2F6F5E;
+color:white;
+}
+
+/* Contact → Dark background */
+#contact{
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("data-bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:white;
+}
+.card{
+background:white;
+color:#111;
+}
+
+
+
+/* Dark Green Headings */
+
+#about h3,
+#skills h3,
+#certifications h3,
+#contact h3{
+color:#2F6F5E;
+}
+
+/* Black Headings */
+
+#projects h3,
+#experience h3,
+#education h3{
+color:#000000;
+}
+
+
+
